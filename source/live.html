@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ruiyi live plus</title>
+<script>
+  window.onerror=function(a,b,c,d,e,f){
+    alert(a+b+c+d+e+f);
+  };
+  function inp(){
+    var url=escape(document.getElementById("url").value);
+    var o=escape(document.getElementById("o").value);
+    var code="INTINTENT=ENT=#Intent;";
+    code+="action=org.videolan.vlc.gui.video.PLAY_FROM_VIDEOGRID;";
+    code+="launchFlags=0x10000000;";
+    code+="component=com.netspace.myipad/com.netspace.library.activity.VideoPlayerActivity2;"
+    code+="S.itemLocation="+url+";l.position=0;"
+    code+="S.title="+o+";end";
+    //alert(code);
+    document.getElementById("c").innerHTML=code;
+  }
+</script>
+</head>
+<body>
+<body bgcolor=" #e5e6d0 ">
+</body>
+<h1>阿伟的博客</h1>
+<p>my-blog</p>
+  <h1>睿易派接入外部直播平台方法</h1>
+  使用本工具生成代码，然后发送至在线答疑<br>
+  请在第一行输入url，支持m3u8、rstp，以及普通的视频(带上http)，第二行输入标题<br>
+  <input type="text" id="url">
+  <input type="text" id="o">
+  <a href="javascript:inp();">确定</a><br>
+  <div id="c" style="word-wrap:break-word;"></div><br>
+cgoxopx制作，阿伟搬运
+&优化
+<p><a href="index.html">返回主页</p>
+</html>
