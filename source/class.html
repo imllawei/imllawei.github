@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<img src="load.jpg"  id="img" >
+</body>
+<script>
+var ip=prompt("睿易通电脑ip(不带http://):","");
+var url="http://"+ip+":50007";
+	function asd()
+{
+element=document.getElementById('img')
+
+element.src=""+url+"";
+}
+	setInterval("asd()","100");
+</script>
+
+</html>
